@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="  Vehicl Information"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Model"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="155dp"
+                android:text="Service Type"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/spVehicleMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spiner_bg"
+                    android:hint="Vehicle Model"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp"
+
+                    />
+
+
+                <Spinner
+                    android:background="@drawable/spiner_bg"
+                    android:id="@+id/spService"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:hint="Vehicle Reg No"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edtVModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backg"
+                    android:hint="Vehicle Model"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtVRegNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backg"
+                    android:hint="Vehicle Reg No"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Contact Details"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingBottom="1dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backg"
+                    android:hint="Customer Name"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edtContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backg"
+                    android:hint="Contact Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Party"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingBottom="2dp"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:background="@drawable/spiner_bg"
+                    android:id="@+id/spParty"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:hint="Service Type"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backg"
+                    android:hint="Amount"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginVertical="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Comments"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edtComments"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/backg"
+                android:hint="Comments"
+                android:padding="10dp"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="99dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/button"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
